@@ -1,13 +1,15 @@
 import java.util.*;
 public class PracticaTema6 {
+	
+	public static int[] numeros = new int[20];
+	public static int Aleatorio = 0;
+	public static int mayor = 0;
+	public static int menor = 10;
+	public static int decision = 1;
 
 	public static void main(String[] args) {
 		
-		int[] numeros = new int[20];
-		int Aleatorio = 0;
-		int mayor = 0;
-		int menor = 1;
-		int decision = 1;
+	
 		Scanner sc = new Scanner(System.in);
 		
 		for(int i = 0; i < numeros.length; i++) {
@@ -44,7 +46,7 @@ public class PracticaTema6 {
 		
 		case 3:
 		
-			int resultadomedia = Media(numeros);	
+			double resultadomedia = Media(numeros);	
 			System.out.println("La media de los valores del array es: " + resultadomedia);break;
 				
 		case 4: 
@@ -103,9 +105,9 @@ public class PracticaTema6 {
 		
 			}
 	
-	public static int Media(int[] numeros) {
+	public static double Media(int[] numeros) {
 		
-		int suma = 0;
+		double suma = 0.0;
 		
 		for (int i = 0; i < numeros.length; i++) {
 			
@@ -113,7 +115,7 @@ public class PracticaTema6 {
 			
 		}
 		
-		int media = suma / numeros.length;
+		double media = suma / numeros.length;
 		return media;
 		
 	}
